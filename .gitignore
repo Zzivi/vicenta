@@ -1,0 +1,17 @@
+# general
+*~
+*.log
+tmp
+dump
+
+# Intellij
+/.idea
+/.idea_modules
+
+# Play
+/.sbtserver
+bin
+logs
+project/project
+project/target
+target
