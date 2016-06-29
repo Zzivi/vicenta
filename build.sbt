@@ -8,10 +8,15 @@ unmanagedResourceDirectories in Test <+= baseDirectory ( _ /"target/web/public/t
 
 scalaVersion := "2.11.7"
 
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  "com.adrianhurt" %% "play-bootstrap" % "1.1-P25-B3-SNAPSHOT",
+  "org.webjars" % "font-awesome" % "4.5.0",
+  "org.webjars" % "bootstrap-datepicker" % "1.4.0"
 )
 
 
